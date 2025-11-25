@@ -115,7 +115,6 @@ const handleSave = async () => {
 
 <template>
   <section class="space-y-6">
-    <!-- Top navigation bar (matches mockup) -->
     <TopBar />
 
     <!-- Breadcrumbs -->

@@ -90,7 +90,6 @@ export const useProductsStore = defineStore('products', () => {
       const data = await getCategories()
       categories.value = data ?? []
     } catch (err) {
-      // categories are optional, expose error but do not block product usage
       setError(getErrorMessage(err))
     }
   }

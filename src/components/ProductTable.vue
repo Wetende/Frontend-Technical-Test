@@ -56,7 +56,6 @@ const getStockStatus = (stock) => {
           class="cursor-pointer transition hover:bg-slate-50"
           @click="handleRowClick(product)"
         >
-          <!-- Product -->
           <td class="px-6 py-4">
             <div class="flex items-center gap-4">
               <img
@@ -75,21 +74,18 @@ const getStockStatus = (stock) => {
             </div>
           </td>
 
-          <!-- Category -->
           <td class="px-6 py-4">
             <span class="inline-flex items-center rounded-md bg-[#EFF4FF] px-2.5 py-1 text-xs font-medium text-[#000080] capitalize">
               {{ product.category }}
             </span>
           </td>
 
-          <!-- Price -->
           <td class="px-6 py-4">
             <span class="text-sm font-medium text-slate-600">
               ${{ Number(product.price).toFixed(2) }}
             </span>
           </td>
 
-          <!-- Stock -->
           <td class="px-6 py-4">
             <div class="flex items-center gap-2">
               <span
@@ -105,7 +101,6 @@ const getStockStatus = (stock) => {
             </div>
           </td>
 
-          <!-- Actions -->
           <td class="px-6 py-4 text-right">
             <button class="text-slate-400 hover:text-slate-600">
               <IconMoreVertical class="h-5 w-5" />
